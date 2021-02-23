@@ -1,0 +1,8 @@
+from english_words import english_words_alpha_set as words
+from itertools import permutations
+perms = [''.join(p) for p in permutations('jnuier')]
+i = 0
+while i < len(perms):
+    if perms[i] in words:
+        print(perms[i])
+    i = i + 1
